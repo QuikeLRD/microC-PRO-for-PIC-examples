@@ -1,0 +1,11 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP18F4550 -DL -O11111114 -fo8 -N"Q:\enriq\Documents\Quike\Mecatronica\Microcontroladores\Curso de MikroC\Operadores para el manejo de bits\Manejo_bits.mcppi" -SP"Q:\Archivosx86\MikroC PRO\mikroC PRO for PIC\Defs\" -SP"Q:\Archivosx86\MikroC PRO\mikroC PRO for PIC\uses\P18\" -SP"Q:\enriq\Documents\Quike\Mecatronica\Microcontroladores\Curso de MikroC\Operadores para el manejo de bits\" -IP"Q:\Archivosx86\MikroC PRO\mikroC PRO for PIC\uses\P18\" "Menejo_bits.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 2027 [bytes], Available ROM: 32768 [bytes]	 
+diagnostics: 0	122	Compilation Started	decodificador_7seg.h
+diagnostics: 23	123	Compiled Successfully	Menejo_bits.c
+diagnostics: 0	127	All files Compiled in 94 ms	 
+hint: 0	1144	Used RAM (bytes): 5 (1%)  Free RAM (bytes): 2022 (99%)	Used RAM (bytes): 5 (1%)  Free RAM (bytes): 2022 (99%)
+hint: 0	1144	Used ROM (bytes): 358 (1%)  Free ROM (bytes): 32410 (99%)	Used ROM (bytes): 358 (1%)  Free ROM (bytes): 32410 (99%)
+diagnostics: 0	125	Project Linked Successfully	Manejo_bits.mcppi
+diagnostics: 0	128	Linked in 15 ms	 
+diagnostics: 0	129	Project 'Manejo_bits.mcppi' completed: 125 ms	 
+diagnostics: 0	103	Finished successfully: 24 jul. 2023, 16:24:37	Manejo_bits.mcppi

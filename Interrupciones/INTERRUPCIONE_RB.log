@@ -1,0 +1,11 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP18F4550 -DL -O11111114 -fo20 -N"Q:\enriq\Documents\Quike\Mecatronica\Microcontroladores\Curso de MikroC\Interrupciones\INTERRUPCIONE_RB.mcppi" -SP"Q:\Archivosx86\MikroC PRO\mikroC PRO for PIC\Defs\" -SP"Q:\Archivosx86\MikroC PRO\mikroC PRO for PIC\uses\P18\" -SP"Q:\enriq\Documents\Quike\Mecatronica\Microcontroladores\Curso de MikroC\Interrupciones\" -IP"Q:\Archivosx86\MikroC PRO\mikroC PRO for PIC\uses\P18\" "INTERRUPCIONE_RB.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl"	 
+hint: 0	1139	Available RAM: 2027 [bytes], Available ROM: 32768 [bytes]	 
+diagnostics: 0	122	Compilation Started	INTERRUPCIONE_RB.c
+diagnostics: 75	123	Compiled Successfully	INTERRUPCIONE_RB.c
+diagnostics: 0	127	All files Compiled in 78 ms	 
+hint: 0	1144	Used RAM (bytes): 93 (5%)  Free RAM (bytes): 1934 (95%)	Used RAM (bytes): 93 (5%)  Free RAM (bytes): 1934 (95%)
+hint: 0	1144	Used ROM (bytes): 915 (3%)  Free ROM (bytes): 31853 (97%)	Used ROM (bytes): 915 (3%)  Free ROM (bytes): 31853 (97%)
+diagnostics: 0	125	Project Linked Successfully	INTERRUPCIONE_RB.mcppi
+diagnostics: 0	128	Linked in 16 ms	 
+diagnostics: 0	129	Project 'INTERRUPCIONE_RB.mcppi' completed: 110 ms	 
+diagnostics: 0	103	Finished successfully: 21 ago. 2024, 00:41:38	INTERRUPCIONE_RB.mcppi

@@ -1,0 +1,5 @@
+main
+	__CC2DW
+	multiplex
+		Div_8X8_U
+		deco_ac

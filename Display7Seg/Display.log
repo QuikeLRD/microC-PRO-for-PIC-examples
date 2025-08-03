@@ -1,0 +1,11 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP18F4550 -DL -O11111114 -fo4 -N"Q:\enriq\Documents\Quike\Mecatronica\Microcontroladores\Curso de MikroC\Display7Seg\Display.mcppi" -SP"Q:\Archivosx86\MikroC PRO\mikroC PRO for PIC\Defs\" -SP"Q:\Archivosx86\MikroC PRO\mikroC PRO for PIC\uses\P18\" -SP"Q:\enriq\Documents\Quike\Mecatronica\Microcontroladores\Curso de MikroC\Display7Seg\" -IP"Q:\Archivosx86\MikroC PRO\mikroC PRO for PIC\uses\P18\" "Display.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 2027 [bytes], Available ROM: 32768 [bytes]	 
+diagnostics: 0	122	Compilation Started	decodificador_7seg.h
+diagnostics: 49	123	Compiled Successfully	Display.c
+diagnostics: 0	127	All files Compiled in 78 ms	 
+hint: 0	1144	Used RAM (bytes): 12 (1%)  Free RAM (bytes): 2015 (99%)	Used RAM (bytes): 12 (1%)  Free RAM (bytes): 2015 (99%)
+hint: 0	1144	Used ROM (bytes): 808 (2%)  Free ROM (bytes): 31960 (98%)	Used ROM (bytes): 808 (2%)  Free ROM (bytes): 31960 (98%)
+diagnostics: 0	125	Project Linked Successfully	Display.mcppi
+diagnostics: 0	128	Linked in 16 ms	 
+diagnostics: 0	129	Project 'Display.mcppi' completed: 110 ms	 
+diagnostics: 0	103	Finished successfully: 14 jul. 2023, 10:23:35	Display.mcppi

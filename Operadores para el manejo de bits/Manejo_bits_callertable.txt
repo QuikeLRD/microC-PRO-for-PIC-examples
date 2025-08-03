@@ -1,0 +1,4 @@
+main
+	__CC2DW
+	deco_cc
+	deco_ac

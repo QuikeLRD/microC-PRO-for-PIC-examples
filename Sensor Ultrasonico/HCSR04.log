@@ -1,0 +1,11 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP18F4550 -DL -O11111114 -fo20 -N"Q:\enriq\Documents\Quike\Mecatronica\Microcontroladores\Curso de MikroC\Sensor Ultrasonico\HCSR04.mcppi" -SP"Q:\Archivosx86\MikroC PRO\mikroC PRO for PIC\Defs\" -SP"Q:\Archivosx86\MikroC PRO\mikroC PRO for PIC\uses\P18\" -SP"Q:\enriq\Documents\Quike\Mecatronica\Microcontroladores\Curso de MikroC\Sensor Ultrasonico\" -IP"Q:\Archivosx86\MikroC PRO\mikroC PRO for PIC\uses\P18\" "HCSR04.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_Sprintf.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl"	 
+hint: 0	1139	Available RAM: 2027 [bytes], Available ROM: 32768 [bytes]	 
+diagnostics: 0	122	Compilation Started	config.h
+diagnostics: 38	123	Compiled Successfully	HCSR04.c
+diagnostics: 0	127	All files Compiled in 79 ms	 
+hint: 0	1144	Used RAM (bytes): 97 (5%)  Free RAM (bytes): 1930 (95%)	Used RAM (bytes): 97 (5%)  Free RAM (bytes): 1930 (95%)
+hint: 0	1144	Used ROM (bytes): 16215 (49%)  Free ROM (bytes): 16553 (51%)	Used ROM (bytes): 16215 (49%)  Free ROM (bytes): 16553 (51%)
+diagnostics: 0	125	Project Linked Successfully	HCSR04.mcppi
+diagnostics: 0	128	Linked in 46 ms	 
+diagnostics: 0	129	Project 'HCSR04.mcppi' completed: 140 ms	 
+diagnostics: 0	103	Finished successfully: 03 ago. 2025, 01:00:12	HCSR04.mcppi
