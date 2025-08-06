@@ -1,7 +1,8 @@
 main
 	__CC2DW
 	USART_INIT
-		longint2double
+		Get_Fosc_kHz
+		longword2double
 			NRM4032
 				SETFUN32
 				FIXSIGN32
@@ -11,6 +12,13 @@ main
 			RES032
 			SETFOV32
 			SETFUN32
+		Compare_Double
+		longint2double
+			NRM4032
+				SETFUN32
+				FIXSIGN32
+				SETFOV32
+				RES032
 		Div_32x32_FP
 			SETFDZ32
 			RES032
@@ -26,5 +34,7 @@ main
 				SETFOV32
 		double2word
 			SETIOV3224
+	USART_DATA_RDY
+	USART_RX
 	USART_TEXTO
 		USART_CHAR

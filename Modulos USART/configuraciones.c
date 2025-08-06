@@ -48,3 +48,21 @@ void USART_TEXTO(char *texto){
      }
 
 }
+char USART_RX(void){
+
+     if(RCSTA.OERR ==1){
+        RCSTA.CREN = 0;         //Limpiamos el OERR
+     }
+        asm{
+            NOP
+            }
+        RCSTA.CREN = 1;         //Habilitamos la RX para futuros datos
+     return RCREG;
+}
+
+
+char USART_DATA_RDY(){
+     return PIR1.RCIF;
+
+}
+

@@ -660,6 +660,7 @@ late1
 late1_bit
 late2
 late2_bit
+letra
 longint2double
 longjmp
 longword2double
@@ -1391,7 +1392,9 @@ urstie_bit
 urstif
 urstif_bit
 usart_char
+usart_data_rdy
 usart_init
+usart_rx
 usart_texto
 usben
 usben_bit

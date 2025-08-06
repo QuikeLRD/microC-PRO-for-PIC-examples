@@ -9,6 +9,9 @@ sbit dir_RX at RC7_bit;
 void USART_INIT(long BAUDRATE);
 void USART_CHAR(char letra);
 void USART_TEXTO(char *texto);
+
+char USART_RX(void);
+char USART_DATA_RDY();
 #line 3 "Q:/enriq/Documents/Quike/Mecatronica/Microcontroladores/Curso de MikroC/Modulos USART/configuraciones.c"
 void USART_INIT(long BAUDRATE){
 
@@ -22,15 +25,15 @@ void USART_INIT(long BAUDRATE){
 
  TXSTA.SYNC = 0;
 
- if( 8000000.0  <=4000000){
+ if( 1000.0*Get_Fosc_kHz()  <=4000000){
 
- SPBRG = (unsigned int)(( 8000000.0 /(16.0*BAUDRATE))-1.0);
+ SPBRG = (unsigned int)(( 1000.0*Get_Fosc_kHz() /(16.0*BAUDRATE))-1.0);
 
  TXSTA.BRGH = 1;
  }
  else{
 
- SPBRG = (unsigned int)(( 8000000.0 /(64.0*BAUDRATE))-1.0);
+ SPBRG = (unsigned int)(( 1000.0*Get_Fosc_kHz() /(64.0*BAUDRATE))-1.0);
 
  TXSTA.BRGH = 0;
  }
@@ -56,5 +59,22 @@ void USART_TEXTO(char *texto){
  USART_CHAR(*texto);
  texto++;
  }
+
+}
+char USART_RX(void){
+
+ if(RCSTA.OERR ==1){
+ RCSTA.CREN = 0;
+ }
+ asm{
+ NOP
+ }
+ RCSTA.CREN = 1;
+ return RCREG;
+}
+
+
+char USART_DATA_RDY(){
+ return PIR1.RCIF;
 
 }
