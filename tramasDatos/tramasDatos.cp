@@ -15,12 +15,25 @@ sbit LCD_D5_Direction at TRISD5_bit;
 sbit LCD_D6_Direction at TRISD6_bit;
 sbit LCD_D7_Direction at TRISD7_bit;
 #line 2 "Q:/enriq/Documents/Quike/Mecatronica/Microcontroladores/Curso de MikroC/tramasDatos/tramasDatos.c"
-char letra;
+char letra, banderaRx=0, i;
+char trama[20]=" ", indice=0;
+char strLCD[20]="RAMIRO";
 
 void Interrupt(){
 
  if(RCIF_bit ==1){
- letra = UART1_Read();
+ trama[indice] = UART1_Read();
+
+ if(trama[indice] == '#'){
+
+ banderaRx=1;
+
+ }
+ else{
+ indice++;
+ }
+
+
  RCIF_bit = 0;
 
  }
@@ -44,8 +57,22 @@ void main() {
 
 
  while(1){
+ Lcd_Out(2,1,strLCD);
+ if(banderaRx==1){
 
+ if(trama[0]=='L' && trama[1] == '1' && trama[2] == 'O' && trama[3] == 'N'){
+ PORTA.RA0 = 1;
+ }
+ if(trama[0]=='L' && trama[1] == '1' && trama[2] == 'O' && trama[3] == 'F' && trama[4] == 'F'){
+ PORTA.RA0 = 0;
+ }
+ for(i=0; i<=19; i++){
+ trama[i]=' ';
+ }
 
+ indice=0;
+ banderaRx=0;
+ }
  if(letra == '1')
  PORTA.RA0 = 1;
  if(letra == '0')

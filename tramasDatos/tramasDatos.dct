@@ -121,6 +121,7 @@ b4
 b5
 b6
 b7
+banderarx
 banked
 baudcon
 baudctl
@@ -527,6 +528,7 @@ hlvdl2
 hlvdl2_bit
 hlvdl3
 hlvdl3_bit
+i
 i2c_dat
 i2c_dat_bit
 ics_auto
@@ -540,6 +542,7 @@ idlen_bit
 indf0
 indf1
 indf2
+indice
 int0
 int0_bit
 int0e
@@ -1148,6 +1151,7 @@ stkptr4
 stkptr4_bit
 stkunf
 stkunf_bit
+strlcd
 sub_32x32_fp
 suspnd
 suspnd_bit
@@ -1283,6 +1287,7 @@ toutps2
 toutps2_bit
 toutps3
 toutps3_bit
+trama
 trisa
 trisa0
 trisa0_bit

@@ -1,4 +1,5 @@
 main
+	__CC2DW
 	UART1_Init
 	Lcd_Init
 		Delay_5500us
@@ -7,5 +8,15 @@ main
 		Delay_1us
 		Delay_5500us
 		Delay_50us
+	Lcd_Out
+		Lcd_Cmd
+			Delay_1us
+			Delay_5500us
+			Delay_50us
+		Lcd_Chr_CP
+			Lcd_Cmd
+				Delay_1us
+				Delay_5500us
+				Delay_50us
 Interrupt
 	UART1_Read
